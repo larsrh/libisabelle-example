@@ -1,0 +1,3 @@
+session Example = "HOL-Protocol" +
+  theories
+    Example
