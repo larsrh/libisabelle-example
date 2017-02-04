@@ -1,1 +1,1 @@
-addSbtPlugin("info.hupel" % "sbt-libisabelle" % "0.4.2")
+addSbtPlugin("info.hupel" % "sbt-libisabelle" % "0.5.0")

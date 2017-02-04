@@ -3,7 +3,7 @@ import sbtassembly.AssemblyPlugin.defaultShellScript
 name := "libisabelle-example"
 version := "0.1"
 
-val libisabelleVersion = "0.6.6"
+val libisabelleVersion = "0.7.0"
 val scalogVersion = "0.2.0"
 
 scalaVersion := "2.12.1"

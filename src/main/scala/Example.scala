@@ -46,7 +46,7 @@ case class ExampleApp(
     case Right(res) => res
   }
 
-  val config = resources.makeConfiguration(Nil, "Example")
+  val config = Configuration.simple("Example")
 
   def build(env: Environment) =
     if (!System.build(env, config)) {
@@ -56,7 +56,7 @@ case class ExampleApp(
 
   val transaction =
     for {
-      env <- setup.makeEnvironment
+      env <- setup.makeEnvironment(resources)
       _ = build(env)
       sys <- System.create(env, config)
       response <- sys.invoke(Pretty)(arg)
