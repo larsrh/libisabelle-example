@@ -19,10 +19,6 @@ libraryDependencies ++= Seq(
 
 assemblyJarName in assembly := s"example-assembly-${version.value}"
 assemblyOption in assembly := (assemblyOption in assembly).value.copy(prependShellScript = Some(defaultShellScript))
-assemblyMergeStrategy in assembly := {
-  case PathList(".libisabelle", ".files") => MergeStrategy.concat
-  case path => (assemblyMergeStrategy in assembly).value(path)
-}
 
 isabelleVersions := Seq("2016", "2016-1")
 isabelleSessions in Compile := Seq("Example")
