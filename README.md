@@ -1,5 +1,11 @@
 # libisabelle-example
 
+ [![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+ 
+ _Note: Superseded by [isabelle-irc-bot](https://github.com/larsrh/isabelle-irc-bot)_
+
+---
+
 Example project using [libisabelle](https://github.com/larsrh/libisabelle)
 
 | Service                   | Status |
